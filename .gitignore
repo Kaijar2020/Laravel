@@ -1,0 +1,8 @@
+#Ignore file and folder
+
+cypress/screenshots
+node_modules
+cypress.config.js
+package-lock.json
+package.json
+*.txt
