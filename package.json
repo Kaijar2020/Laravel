@@ -1,0 +1,27 @@
+{
+  "name": "WebElementAutomationWith_cypress",
+  "version": "1.0.0",
+  "description": "laravel code will stored here",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kaijar2020/WebElementAutomationWith_cypress.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kaijar2020/WebElementAutomationWith_cypress/issues"
+  },
+  "homepage": "https://github.com/Kaijar2020/WebElementAutomationWith_cypress#readme",
+  "devDependencies": {
+    "@faker-js/faker": "^8.2.0",
+    "cypress": "^13.3.2",
+    "cypress-file-upload": "^5.0.8",
+    "cypress-mochawesome-reporter": "^3.6.1",
+    "cypress-xpath": "^2.0.1"
+  }
+}

@@ -23,6 +23,10 @@
         /* This function only useable .if ["includeShadowDom":true] code is appear in the config.js file.
         To use it add those line in the config,js file*/
 
-        cy.get("#pizza").type('This is text')
+        //cy.get("#pizza").type('This is text')
+        cy.get("#pizza").type('This is text',{delay:0}) //set time for typing
+        //cy.reload()
+
+        //To remove case sensetiveness use {matchCase:false}
     })
  })
