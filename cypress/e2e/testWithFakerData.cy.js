@@ -20,6 +20,7 @@ describe('Took data from Faker Libary and Automate the software',()=>{
     it('Register User with faker Data',()=>{
 
         cy.get('#input-firstname').type(faker.person.firstName())
+        //cy.get('#input-firstnamee',{timeout:0}).type(faker.person.firstName()) //this part only wait untill timeout
         cy.get('#input-lastname').type(faker.person.lastName())
         cy.get('#input-email').type(faker.internet.email())
         cy.get('#input-telephone').type(faker.phone.number())
