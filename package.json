@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/Kaijar2020/WebElementAutomationWith_cypress#readme",
   "devDependencies": {
+    "@4tw/cypress-drag-drop": "^2.2.5",
     "@faker-js/faker": "^8.2.0",
     "cypress": "^13.3.3",
     "cypress-file-upload": "^5.0.8",
