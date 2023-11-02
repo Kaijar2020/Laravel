@@ -12,7 +12,7 @@ describe('Controling browser tab with Cypress',()=>{
     })
 
     //open link in same Tab-- Approach-02
-    it('Open link same Tab-- Process-2',()=>{
+    it.skip('Open link same Tab-- Process-2',()=>{
         cy.contains('Learning Hub').invoke('attr','target', '_self').click()
     })
 })

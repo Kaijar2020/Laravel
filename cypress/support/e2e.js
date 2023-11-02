@@ -18,3 +18,6 @@ import './commands'
 
 // Alternatively you can use CommonJS syntax:
 //require('./commands')
+
+//import for mochaawsome repoters
+import 'cypress-mochawesome-reporter/register';

@@ -3,7 +3,7 @@
 describe('Write in the File',()=>{
 
     //Write to the Text File
-    it('Write to the text file',()=>{
+    it.skip('Write to the text file',()=>{
         cy.writeFile("writeTest.txt", "Hello Cypress \n")
         cy.writeFile("writeTest.txt", "Testing World", { flag:"a+" })
     })
@@ -20,7 +20,7 @@ describe('Write in the File',()=>{
 //Read from the file
 describe('Read the File',()=>{
 
-    it('Read to the file',()=>{
+    it.skip('Read to the file',()=>{
         cy.readFile('writeTest.txt').then((data)=>{
             cy.log("File Text", data)
         })

@@ -1,6 +1,6 @@
 describe('Login Website By basic Auththentication',()=>{
 
-    it('Login using basic Auth',()=>{
+    it.skip('Login using basic Auth',()=>{
 
         cy.visit('https://authenticationtest.com/HTTPAuth/',{
 

@@ -49,7 +49,7 @@ describe('Mouse Operation', ()=>{
     })
 
     //Scrolin the Page 
-    it.only('Scroll the page',()=>{
+    it('Scroll the page',()=>{
 
         //Scroll down
         cy.visit('https://www.countries-ofthe-world.com/flags-of-the-world.html')

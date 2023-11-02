@@ -8,7 +8,7 @@
         cy.wait(1000)
     })
 
-    it.skip('Test inside Shadow DOM',()=>{
+    it('Test inside Shadow DOM',()=>{
 
         //Finding Shadow element and type on there.
         

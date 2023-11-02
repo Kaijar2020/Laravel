@@ -15,7 +15,7 @@ describe('Handeling Table in Cypress',()=>{
     })
 
     //To check number of rows and columns
-    it.skip('Check number rows and columns',()=>{
+    it('Check number rows and columns',()=>{
 
         //Assert the total number of rows.
         cy.get("table[class='table table-bordered table-hover']>tbody>tr").should('have.length', '10') 
@@ -26,7 +26,7 @@ describe('Handeling Table in Cypress',()=>{
     })
 
     //To check the cell data on table
-    it.skip('Check cell data from specific row and column',()=>{
+    it('Check cell data from specific row and column',()=>{
         //check the 5th row 3rd column value.
         cy.get("table[class='table table-bordered table-hover']>tbody>tr:nth-child(5)>td:nth-child(3)")
         .contains("hfgjhgjgjggj@gmail.com")
@@ -34,7 +34,7 @@ describe('Handeling Table in Cypress',()=>{
     })
 
     //Read all the rows and columns data in the first page
-    it.skip('Read all the rows and columns data in the first page',()=>{
+    it('Read all the rows and columns data in the first page',()=>{
         
         cy.get("table[class='table table-bordered table-hover']>tbody>tr").each(($row, index, $rows)=>{ //to read each and every row
            

@@ -26,6 +26,20 @@
 
 //require('cypress-xpath');
 
+//iframe-plugin
+import 'cypress-iframe';
+
 /// <reference types="Cypress" />
 
 require('cypress-xpath');
+
+//Cypress custom command for iFrame
+
+    Cypress.Commands.add('getIframe', (iframe)=>{
+    cy.get(iframe)
+    .its('0.contentDocument.body')
+    .should('be.visible')
+    .then(cy.wrap);
+    })
+    
+
