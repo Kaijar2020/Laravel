@@ -19,7 +19,7 @@ describe('Auto Mate Calender and Verify date',()=>{
         .each((el)=>{
             const d = el.text()
             //cy.log(d)
-            if(d.includes('30')){
+            if(d.includes('31')){
                 cy.wrap(el).click()
             }
         })

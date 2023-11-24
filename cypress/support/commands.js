@@ -27,7 +27,7 @@
 //require('cypress-xpath');
 
 //iframe-plugin
-import 'cypress-iframe';
+//import 'cypress-iframe';
 
 /// <reference types="Cypress" />
 
