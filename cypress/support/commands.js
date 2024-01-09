@@ -41,5 +41,20 @@ require('cypress-xpath');
     .should('be.visible')
     .then(cy.wrap);
     })
+
+    //Performing Session Practice
+
+    Cypress.Commands.add('loginWithSession', (username, password) => {
+        cy.session([username, password],()=>{
+            cy.visit('https://opensource-demo.orangehrmlive.com/web/index.php/auth/login')
+            cy.get("[name = 'username']").clear().type(username)
+            cy.get("[name = 'password']").clear().type(password)
+            cy.get('form').submit()
+        },
+        {
+            cacheAcrossSpecs: true
+        }
+        )
+    })
     
 
