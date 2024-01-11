@@ -1,15 +1,11 @@
-describe('Session test in Cypress',()=>{
+describe('Session test in Cypress', { testIsolation: false } ,()=>{
 
-    // before({ testIsolation: false } ,() => {
-    //     // ensure clean test slate for these tests
-    //     cy.then(Cypress.session.clearCurrentSessionData)
-    //   })
+    //{ testIsolation: false} needs to keep session alive.
 
-    beforeEach('login with Session',()=>{
-        
-        cy.loginWithSession("Admin", "admin123")
-        cy.visit("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login")
-        //cy.clearCookies({log: true}) //to clear all the cookie
+    before(()=>{
+        Cypress.session.clearAllSavedSessions() //before begain the test clear all save seeion .Run test as new.
+       
+        cy.loginWithSession('Admin', 'admin123') //call the custom commands from command.js  file.
     })
 
     it('test case one',()=>{

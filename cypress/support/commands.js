@@ -42,19 +42,17 @@ require('cypress-xpath');
     .then(cy.wrap);
     })
 
-    //Performing Session Practice
+    //Performing Session Practice this custom commands need.
 
     Cypress.Commands.add('loginWithSession', (username, password) => {
-        cy.session([username, password],()=>{
+
+        cy.session([username, password],()=>{  //Cy.session() is used for make a session for this user.
+
             cy.visit('https://opensource-demo.orangehrmlive.com/web/index.php/auth/login')
             cy.get("[name = 'username']").clear().type(username)
             cy.get("[name = 'password']").clear().type(password)
             cy.get('form').submit()
-        },
-        {
-            cacheAcrossSpecs: true
-        }
-        )
+        } )
     })
     
 
