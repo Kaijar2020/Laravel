@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "chrome-head": "npx cypress run --browser chrome --headed",
-    "headless": "npx cypress run --headless"
+    "headless": "npx cypress run --headless",
+    "test:brokenLink": "npx cypress run --spec 'cypress/e2e/brokenLink.cy.js'"
   },
   "repository": {
     "type": "git",
