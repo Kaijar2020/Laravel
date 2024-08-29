@@ -9,4 +9,5 @@ node_modules
 
 #Ignoring report folder...
 cypress/reports/html/videos
+cypress/reports/html/.jsons
 cypress/downloads

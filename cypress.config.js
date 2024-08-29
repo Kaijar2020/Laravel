@@ -29,7 +29,15 @@ module.exports = {
         return launchOptions
       })
       */
-
+      /*
+      //This part is use to serialise spec file.
+      config.specPattern = [
+          'cypress/e2e/basicAuth.cy.js',
+          'cypress/e2e/toolTips.cy.js',
+          'cypress/e2e/cypress_Aliases.cy.js',
+      ]
+      return config
+      */
       require('cypress-mochawesome-reporter/plugin')(on);
     },
 
